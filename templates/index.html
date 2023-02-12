@@ -3,13 +3,24 @@
 
 <head>
   <title>Wheel of Fortune</title>
+  <script>
+    function spin() {
+      const xhr = new XMLHttpRequest();
+      xhr.open('POST', '/spin', true);
+      xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+      xhr.onload = function () {
+        if (this.status === 200) {
+          document.querySelector('#result').innerHTML = this.responseText;
+        }
+      };
+      xhr.send();
+    }
+  </script>
 </head>
 
 <body>
   <h1>Wheel of Fortune</h1>
-  <form action="{{ url_for('spin') }}" method="post">
-    <input type="submit" value="Spin the Wheel">
-  </form>
+  <button onclick="spin()">Spin the Wheel</button>
   <p id="result"></p>
 </body>
 
