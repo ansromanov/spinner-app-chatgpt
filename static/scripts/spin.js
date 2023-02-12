@@ -4,7 +4,13 @@ function spin() {
   xhr.setRequestHeader('Content-Type', 'application/json');
   xhr.onload = function () {
     if (this.status === 200) {
-      document.querySelector('#result').innerHTML = this.responseText;
+      document.querySelector('#result').innerHTML = "The winner is: " + this.responseText;
+      const winner = this.responseText;
+      inputs.forEach(input => {
+        if (input.value === winner) {
+          input.parentNode.removeChild(input);
+        }
+      });
     }
   };
 

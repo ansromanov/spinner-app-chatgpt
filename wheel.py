@@ -15,5 +15,6 @@ def spin():
     spin_result = random.choice(spin_options)
     return spin_result
 
+
 if __name__ == '__main__':
     app.run()
