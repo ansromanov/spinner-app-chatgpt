@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request
-import random
 import json
+import random
 
 app = Flask(__name__)
 
@@ -10,8 +10,9 @@ def index():
 
 @app.route('/spin', methods=['POST'])
 def spin():
-    spin_values = json.loads(request.data)['values']
-    spin_result = random.choice(spin_values)
+    data = json.loads(request.data)
+    spin_options = data["values"]
+    spin_result = random.choice(spin_options)
     return spin_result
 
 if __name__ == '__main__':

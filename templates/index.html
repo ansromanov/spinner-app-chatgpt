@@ -3,40 +3,20 @@
 
 <head>
   <title>Wheel of Fortune</title>
-  <script>
-    function spin() {
-      const spinValues = [];
-      document.querySelectorAll('.spin-value').forEach(value => spinValues.push(value.value));
-      const xhr = new XMLHttpRequest();
-      xhr.open('POST', '/spin', true);
-      xhr.setRequestHeader('Content-Type', 'application/json');
-      xhr.onload = function () {
-        if (this.status === 200) {
-          document.querySelector('#result').innerHTML = this.responseText;
-        }
-      };
-      xhr.send(JSON.stringify({ values: spinValues }));
-    }
-
-    function addInput() {
-      const input = document.createElement('input');
-      input.type = 'text';
-      input.classList.add('spin-value');
-      document.querySelector('#spin-values').appendChild(input);
-    }
-
-    function removeInput(input) {
-      input.remove();
-    }
-  </script>
+  <script src="{{ url_for('static', filename='scripts/spin.js') }}"></script>
+  <script src="{{ url_for('static', filename='scripts/add_field.js') }}"></script>
+  <script src="{{ url_for('static', filename='scripts/remove_field.js') }}"></script>
 </head>
 
 <body>
   <h1>Wheel of Fortune</h1>
-  <div id="spin-values">
-    <input type="text" class="spin-value" />
+  <div id="inputContainer">
+    <input type="text" name="value">
   </div>
   <button onclick="addInput()">+</button>
+  <button onclick="removeInput()">-</button>
+  <br>
+  <br>
   <button onclick="spin()">Spin the Wheel</button>
   <p id="result"></p>
 </body>
