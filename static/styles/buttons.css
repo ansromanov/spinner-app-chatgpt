@@ -24,40 +24,43 @@ button {
   transition: all 0.3s ease;
 }
 
-.buttonPlus {
-  background-color: #90ee90;
-}
-
-.buttonPlus:hover {
-  background-color: #77dd77;
-}
-
-.buttonPlus:active {
-  background-color: #66cc66;
-}
-
 .buttonMinus {
-  background-color: #ffb6c1;
+  background-color: #FF8080;
+  /* Pastel Red */
 }
 
 .buttonMinus:hover {
-  background-color: #ffa07a;
+  background-color: #FF3333;
 }
 
 .buttonMinus:active {
-  background-color: #ff9079;
+  background-color: #CC2929;
+}
+
+.buttonPlus {
+  background-color: #80FF80;
+  /* Pastel Green */
+}
+
+.buttonPlus:hover {
+  background-color: #33FF33;
+}
+
+.buttonPlus:active {
+  background-color: #29CC29;
 }
 
 .buttonSpin {
-  background-color: #87cefa;
+  background-color: #FFC080;
+  /* Pastel Orange */
 }
 
 .buttonSpin:hover {
-  background-color: #87c1eb;
+  background-color: #FF9933;
 }
 
 .buttonSpin:active {
-  background-color: #87ceea;
+  background-color: #CC6629;
 }
 
 
