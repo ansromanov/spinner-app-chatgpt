@@ -12,15 +12,16 @@
 <body>
   <h1>Wheel of Fortune</h1>
   <div id="inputContainer">
+    <div id="buttonsContainer">
+      <button onclick="spin()">Spin the Wheel</button>
+      <button onclick="addInput()">+</button>
+      <button onclick="removeInput()">-</button>
+    </div>
     <input type="text" name="value">
   </div>
-  <button onclick="addInput()">+</button>
-  <button onclick="removeInput()">-</button>
   <br>
   <br>
-  <button onclick="spin()">Spin the Wheel</button>
   <p id="result"></p>
-
 </body>
 
 </html>

@@ -8,7 +8,10 @@ function spin() {
       const winner = this.responseText;
       inputs.forEach(input => {
         if (input.value === winner) {
-          input.parentNode.removeChild(input);
+          input.classList.add('winner');
+          setTimeout(() => {
+            input.parentNode.removeChild(input);
+          }, 2000);
         }
       });
     }
