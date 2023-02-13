@@ -1,0 +1,72 @@
+#buttonsContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  width: 100px;
+  height: 36px;
+  margin: 10px;
+  padding: 40px 30px;
+  font-size: 18px;
+  border-radius: 18px;
+  border: 2px solid #ccc;
+  background-color: #ffd740;
+  cursor: pointer;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.buttonPlus {
+  background-color: #90ee90;
+}
+
+.buttonPlus:hover {
+  background-color: #77dd77;
+}
+
+.buttonPlus:active {
+  background-color: #66cc66;
+}
+
+.buttonMinus {
+  background-color: #ffb6c1;
+}
+
+.buttonMinus:hover {
+  background-color: #ffa07a;
+}
+
+.buttonMinus:active {
+  background-color: #ff9079;
+}
+
+.buttonSpin {
+  background-color: #87cefa;
+}
+
+.buttonSpin:hover {
+  background-color: #87c1eb;
+}
+
+.buttonSpin:active {
+  background-color: #87ceea;
+}
+
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 2px 2px 4px #ccc;
+}
+
+button:active {
+  transform: translateY(0);
+  box-shadow: none;
+}

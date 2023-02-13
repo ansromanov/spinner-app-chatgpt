@@ -1,0 +1,32 @@
+#inputContainer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+input[name="value"] {
+  margin-bottom: 10px;
+}
+
+input[type="text"] {
+  width: 300px;
+  height: 36px;
+  margin: 10px;
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 18px;
+  border: 2px solid #ccc;
+  background-color: #E0FFFF;
+  /* Light Cyan */
+  transition: all 0.3s ease;
+}
+
+input[type="text"]:focus {
+  background-color: #AFEEEE;
+  /* Pale Turquoise */
+  outline: none;
+  transform: translateY(-2px);
+  box-shadow: 2px 2px 4px #ccc;
+}
