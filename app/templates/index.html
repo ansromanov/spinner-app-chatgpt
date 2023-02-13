@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>Wheel of Fortune</title>
+  <title>Spinner App</title>
   <script src="{{ url_for('static', filename='scripts/spin.js') }}"></script>
   <script src="{{ url_for('static', filename='scripts/add_field.js') }}"></script>
   <script src="{{ url_for('static', filename='scripts/remove_field.js') }}"></script>
@@ -15,9 +15,9 @@
 </head>
 
 <body>
-  <h1>Wheel of Fortune</h1>
+  <h1>Spinner App</h1>
   <div id="buttonsContainer">
-    <button class="buttonSpin" onclick="spin()">Spin the Wheel</button>
+    <button class="buttonSpin" onclick="spin()">Get luck</button>
     <button class="buttonPlus" onclick="addInput()">+</button>
     <button class="buttonMinus" onclick="removeInput()">-</button>
   </div>
@@ -27,7 +27,6 @@
   <footer id="madeWith">
     Made with ❤️ using ChatGPT
   </footer>
-  <!-- <p id="madeWith">Made with ❤️ using ChatGPT</p> -->
   <br>
   <br>
 </body>
