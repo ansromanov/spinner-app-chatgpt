@@ -20,10 +20,10 @@ h1 {
 }
 
 #madeWith {
-  position: absolute;
+  position: fixed;
   bottom: 10px;
-  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
   text-align: center;
-  font-size: 14px;
-  color: #aaa;
+  z-index: 10;
 }
