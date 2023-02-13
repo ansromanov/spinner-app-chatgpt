@@ -19,6 +19,7 @@ h1 {
   margin-top: 20px;
 }
 
+/* 
 #madeWith {
   position: fixed;
   bottom: 10px;
@@ -26,4 +27,12 @@ h1 {
   transform: translateX(-50%);
   text-align: center;
   z-index: 10;
+} */
+#madeWith {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 15px;
+  background-color: #707070;
 }

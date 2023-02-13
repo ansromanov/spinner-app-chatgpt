@@ -1,10 +1,23 @@
+/* #inputContainer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 50px;
+  position: relative;
+} */
+
 #inputContainer {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  margin-bottom: 50px;
+  position: relative;
 }
+
 
 input[name="value"] {
   margin-bottom: 10px;
