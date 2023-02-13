@@ -17,9 +17,9 @@ input[type="text"] {
   padding: 10px;
   font-size: 18px;
   border-radius: 18px;
-  border: 2px solid #f92672;
+  border: 2px solid #CC6629;
   background-color: #49483e;
-  color: #f8f8f2;
+  color: #b6b6b3;
   transition: all 0.3s ease;
 }
 
@@ -27,5 +27,5 @@ input[type="text"]:focus {
   background-color: #665c54;
   outline: none;
   transform: translateY(-2px);
-  box-shadow: 2px 2px 4px #f92672;
+  box-shadow: 2px 2px 4px #CC6629;
 }

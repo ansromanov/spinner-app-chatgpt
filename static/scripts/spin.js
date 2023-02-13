@@ -14,6 +14,11 @@ function spin() {
           }, 2000);
         }
       });
+
+      confetti({
+        particleCount: 200,
+        spread: 70
+      });
     }
   };
 
